@@ -1,0 +1,58 @@
+:root {
+
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+    /* Colors */
+    --primary-color: #2DCF57;
+    --secondary-color: #242424;
+    --text-primary: #5A5A5A;
+    --terciary-color: #E4F4E8;
+    --white-color: #FFFFFF;
+
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+    /* Fonts */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: 'Arial', sans-serif;
+
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+    /* Font Size */
+    --font-size-base: 1rem;
+    /* 16px */
+    --font-size-md: 2rem;
+    /* 32px */
+    --font-size-lg: 3rem;
+    /* 48px */
+
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+    /* Container */
+    --container-width: 1170px;
+    --container-padding: 1rem;
+
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    /* 4px */
+    --spacing-sm: 0.5rem;
+    /* 8px */
+    --spacing-md: 1rem;
+    /* 16px */
+    --spacing-lg: 1.5rem;
+    /* 24px */
+    --spacing-xl: 2rem;
+    /* 32px */
+
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+    /* Border radius */
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 20px;
+    --border-radius-xl: 30px;
+    --border-radius-full: 100%;
+
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+}
