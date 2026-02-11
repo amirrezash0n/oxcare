@@ -3,6 +3,7 @@
     z-index: 1000;
     background-color: var(--white-color);
     padding: 1.5rem 0;
+    background-color: var(--terciary-color);
 }
 
 .container {
@@ -76,26 +77,25 @@
     border-radius: var(--border-radius-md);
     font-weight: 600;
     transition: all 0.3s ease;
+    z-index: 100;
 }
 
 .loginBtn:hover {
-    background-color: var(--terciary-color);
     transform: translateY(-2px);
 }
 
 .signupBtn {
     color: var(--white-color);
     background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
     padding: 0.625rem 1.75rem;
     border-radius: var(--border-radius-md);
     font-weight: 600;
     transition: all 0.3s ease;
+    z-index: 100;
 }
 
 .signupBtn:hover {
     background-color: #25b54a;
-    border-color: #25b54a;
     transform: translateY(-2px);
 }
 

@@ -1,0 +1,203 @@
+.hero {
+    background-color: var(--terciary-color);
+}
+
+.heroWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heroTitle {
+    font-size: 52px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    line-height: 70px;
+}
+
+.heroText {
+    margin-bottom: 32px;
+}
+
+.heroImgWrapper {
+    margin-bottom: -5px;
+}
+
+.heroImg {
+    max-width: 840px;
+    height: 670px;
+    margin-top: -40px;
+    z-index: -100;
+}
+
+.heroButtons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.heroActiveBtn {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.625rem 1.75rem;
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.heroActiveBtn:hover {
+    background-color: #25b54a;
+    border-color: #25b54a;
+    transform: translateY(-2px);
+}
+
+.heroNonActiveBtn {
+    color: var(--secondary-color);
+    background: transparent;
+    padding: 0.625rem 1.75rem;
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    border: 1px solid #111;
+    transition: all 0.3s ease;
+}
+
+.heroNonActiveBtn:hover {
+    background-color: var(--terciary-color);
+    transform: translateY(-2px);
+}
+
+/* Hero.module.css - فقط ریسپانسیو (عکس بالا، متن پایین) */
+
+@media (max-width: 1200px) {
+    .heroImg {
+        max-width: 700px;
+        height: 580px;
+    }
+
+    .heroTitle {
+        font-size: 44px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heroWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        /* عکس می‌ره بالا، متن می‌ره پایین */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .heroImgWrapper {
+        margin-bottom: 0;
+        order: 1;
+        /* عکس اول */
+    }
+
+    .heroImg {
+        max-width: 600px;
+        height: 500px;
+        margin-top: 0;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+        line-height: 54px;
+        max-width: 800px;
+        margin: 0 auto 10px;
+    }
+
+    .heroText {
+        max-width: 600px;
+        margin: 0 auto 32px;
+    }
+
+    .heroButtons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroWrapper {
+        gap: 1.5rem;
+    }
+
+    .heroImg {
+        max-width: 500px;
+        height: 420px;
+    }
+
+    .heroTitle {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .heroActiveBtn,
+    .heroNonActiveBtn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .heroWrapper {
+        gap: 1.25rem;
+    }
+
+    .heroImg {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1.2;
+    }
+
+    .heroTitle {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .heroText {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+
+    .heroButtons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .heroActiveBtn,
+    .heroNonActiveBtn {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroImg {
+        aspect-ratio: 1;
+    }
+
+    .heroTitle {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .heroText {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .heroTitle {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .heroText {
+        font-size: 0.8125rem;
+    }
+}
