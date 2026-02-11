@@ -43,25 +43,26 @@
     transition: color 0.3s ease;
     position: relative;
     padding: 0.5rem 0;
-}
 
-.listItem li a:hover {
-    color: var(--primary-color);
-}
+    &:hover {
+        color: var(--primary-color);
+    }
 
-.listItem li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease;
-}
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--primary-color);
+        transition: width 0.3s ease;
+    }
 
-.listItem li a:hover::after {
-    width: 100%;
+    &:hover::after {
+
+        width: 100%;
+    }
 }
 
 .buttonsWrapper {
@@ -78,10 +79,11 @@
     font-weight: 600;
     transition: all 0.3s ease;
     z-index: 100;
-}
 
-.loginBtn:hover {
-    transform: translateY(-2px);
+    &:hover {
+
+        transform: translateY(-2px);
+    }
 }
 
 .signupBtn {
@@ -92,11 +94,11 @@
     font-weight: 600;
     transition: all 0.3s ease;
     z-index: 100;
-}
 
-.signupBtn:hover {
-    background-color: #25b54a;
-    transform: translateY(-2px);
+    &:hover {
+        background-color: #25b54a;
+        transform: translateY(-2px);
+    }
 }
 
 /* Mobile Menu Button (Hidden on Desktop) */
@@ -116,25 +118,28 @@
     background-color: var(--secondary-color);
     position: relative;
     transition: background-color 0.3s ease;
-}
 
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: var(--secondary-color);
-    left: 0;
-    transition: transform 0.3s ease;
-}
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--secondary-color);
+        left: 0;
+        transition: transform 0.3s ease;
+        bottom: -6px;
+    }
 
-.hamburger::before {
-    top: -6px;
-}
-
-.hamburger::after {
-    bottom: -6px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--secondary-color);
+        left: 0;
+        transition: transform 0.3s ease;
+        top: -6px;
+    }
 }
 
 /* Mobile Menu */
@@ -150,10 +155,11 @@
     transition: transform 0.4s ease;
     padding-top: 6rem;
     overflow-y: auto;
-}
 
-.mobileMenu.open {
-    transform: translateX(0);
+    &:open {
+
+        transform: translateX(0);
+    }
 }
 
 .mobileList {
@@ -174,10 +180,10 @@
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--terciary-color);
     transition: color 0.3s ease;
-}
 
-.mobileList li a:hover {
-    color: var(--primary-color);
+    &:hover {
+        color: var(--primary-color);
+    }
 }
 
 .mobileButtons {

@@ -44,12 +44,12 @@
     border-radius: var(--border-radius-md);
     font-weight: 600;
     transition: all 0.3s ease;
-}
 
-.heroActiveBtn:hover {
-    background-color: #25b54a;
-    border-color: #25b54a;
-    transform: translateY(-2px);
+    &:hover {
+        background-color: #25b54a;
+        border-color: #25b54a;
+        transform: translateY(-2px);
+    }
 }
 
 .heroNonActiveBtn {
@@ -60,14 +60,12 @@
     font-weight: 600;
     border: 1px solid #111;
     transition: all 0.3s ease;
-}
 
-.heroNonActiveBtn:hover {
-    background-color: var(--terciary-color);
-    transform: translateY(-2px);
+    &:hover {
+        background-color: var(--terciary-color);
+        transform: translateY(-2px);
+    }
 }
-
-/* Hero.module.css - فقط ریسپانسیو (عکس بالا، متن پایین) */
 
 @media (max-width: 1200px) {
     .heroImg {
@@ -85,15 +83,13 @@
     .heroWrapper {
         display: flex;
         flex-direction: column-reverse;
-        /* عکس می‌ره بالا، متن می‌ره پایین */
         text-align: center;
         gap: 2rem;
     }
 
     .heroImgWrapper {
         margin-bottom: 0;
-        order: 1;
-        /* عکس اول */
+        order: 1
     }
 
     .heroImg {
