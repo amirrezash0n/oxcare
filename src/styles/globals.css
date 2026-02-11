@@ -38,8 +38,7 @@ h5,
 h6 {
     font-family: var(--font-heading);
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: var(--spacing-md);
+    line-height: 1.2
 }
 
 h1 {
@@ -62,20 +61,20 @@ p {
 }
 
 a {
-    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
     cursor: pointer;
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
-ul,
-ol {
-    margin-left: var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 /* utility classes */
