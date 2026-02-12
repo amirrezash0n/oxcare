@@ -2,10 +2,10 @@ import styles from "./Stats.module.css";
 
 function Stats() {
   const statsData = [
-    { number: "24/7", label: "Online Support" },
-    { number: "100+", label: "Doctors" },
-    { number: "1M+", label: "Active Patients" },
-    { number: "5M+", label: "Interested" },
+    { number: "24/7", label: "Online Support", statCardBg: true },
+    { number: "100+", label: "Doctors", statCardBg: false },
+    { number: "1M+", label: "Active Patients", statCardBg: true },
+    { number: "5M+", label: "Interested", statCardBg: false },
   ];
 
   return (
@@ -13,7 +13,10 @@ function Stats() {
       <div className="container">
         <div className={styles.statsGrid}>
           {statsData.map((stat, index) => (
-            <div key={index} className={styles.statCard}>
+            <div
+              className={`${styles.statCard} ${stat.statCardBg ? styles.statCardPrimary : styles.statCardSecondery}`}
+              key={index}
+            >
               <h3 className={styles.statNumber}>{stat.number}</h3>
               <p className={styles.statLabel}>{stat.label}</p>
             </div>

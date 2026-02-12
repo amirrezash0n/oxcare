@@ -2,6 +2,14 @@ import { useState } from "react";
 import Button from "../common/Button/Button";
 import styles from "./Header.module.css";
 
+const mobileListItems = [
+  { title: "Home", href: "#home" },
+  { title: "About", href: "#about" },
+  { title: "Doctors", href: "#doctors" },
+  { title: "Services", href: "#services" },
+  { title: "Contact", href: "#contact" },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,21 +21,11 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className={styles.nav}>
           <ul className={styles.listItem}>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#doctors">Doctors</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+            {mobileListItems.map((item, index) => (
+              <li key={index}>
+                <a href={item.href}>{item.title}</a>
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -51,31 +49,13 @@ export default function Header() {
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ""}`}>
         <div className="container">
           <ul className={styles.mobileList}>
-            <li>
-              <a href="#home" onClick={() => setIsMenuOpen(false)}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" onClick={() => setIsMenuOpen(false)}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#doctors" onClick={() => setIsMenuOpen(false)}>
-                Doctors
-              </a>
-            </li>
-            <li>
-              <a href="#services" onClick={() => setIsMenuOpen(false)}>
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-                Contact
-              </a>
-            </li>
+            {mobileListItems.map((item, index) => (
+              <li key={index}>
+                <a href={item.href} onClick={() => setIsMenuOpen(false)}>
+                  {item.title}
+                </a>
+              </li>
+            ))}
             <li className={styles.mobileButtons}>
               <Button className={styles.mobileLoginBtn}>Login</Button>
               <Button className={styles.mobileSignupBtn}>Signup</Button>

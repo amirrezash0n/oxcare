@@ -43,26 +43,25 @@
     transition: color 0.3s ease;
     position: relative;
     padding: 0.5rem 0;
+}
 
-    &:hover {
-        color: var(--primary-color);
-    }
+.listItem li a:hover {
+    color: var(--primary-color);
+}
 
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--primary-color);
-        transition: width 0.3s ease;
-    }
+.listItem li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
 
-    &:hover::after {
-
-        width: 100%;
-    }
+.listItem li a:hover::after {
+    width: 100%;
 }
 
 .buttonsWrapper {
@@ -79,11 +78,10 @@
     font-weight: 600;
     transition: all 0.3s ease;
     z-index: 100;
+}
 
-    &:hover {
-
-        transform: translateY(-2px);
-    }
+.loginBtn:hover {
+    transform: translateY(-2px);
 }
 
 .signupBtn {
@@ -94,11 +92,11 @@
     font-weight: 600;
     transition: all 0.3s ease;
     z-index: 100;
+}
 
-    &:hover {
-        background-color: #25b54a;
-        transform: translateY(-2px);
-    }
+.signupBtn:hover {
+    background-color: #25b54a;
+    transform: translateY(-2px);
 }
 
 /* Mobile Menu Button (Hidden on Desktop) */
@@ -118,28 +116,25 @@
     background-color: var(--secondary-color);
     position: relative;
     transition: background-color 0.3s ease;
+}
 
-    &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: var(--secondary-color);
-        left: 0;
-        transition: transform 0.3s ease;
-        bottom: -6px;
-    }
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    left: 0;
+    transition: transform 0.3s ease;
+}
 
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: var(--secondary-color);
-        left: 0;
-        transition: transform 0.3s ease;
-        top: -6px;
-    }
+.hamburger::before {
+    top: -6px;
+}
+
+.hamburger::after {
+    bottom: -6px;
 }
 
 /* Mobile Menu */
@@ -149,17 +144,16 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--white-color);
+    background-color: var(--terciary-color);
     z-index: 999;
     transform: translateX(-100%);
     transition: transform 0.4s ease;
     padding-top: 6rem;
     overflow-y: auto;
+}
 
-    &:open {
-
-        transform: translateX(0);
-    }
+.mobileMenu.open {
+    transform: translateX(0);
 }
 
 .mobileList {
@@ -180,10 +174,10 @@
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--terciary-color);
     transition: color 0.3s ease;
+}
 
-    &:hover {
-        color: var(--primary-color);
-    }
+.mobileList li a:hover {
+    color: var(--primary-color);
 }
 
 .mobileButtons {

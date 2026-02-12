@@ -1,19 +1,5 @@
-/* src/components/Stats/Stats.module.css */
-
 .statsSection {
-    padding: var(--spacing-xl) 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.statsSection::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg, var(--primary-color), transparent);
+    margin: 70px 0;
 }
 
 .statsGrid {
@@ -24,38 +10,21 @@
 }
 
 .statCard {
-    padding: var(--spacing-lg);
+    padding: 36px 0;
     background-color: var(--primary-color);
-    border-radius: var(--border-radius-md);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    border-radius: var(--border-radius-lg);
 }
 
-.statCard::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
+.statCardPrimary {
     background-color: var(--primary-color);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
 }
 
-.statCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.statCard:hover::after {
-    transform: scaleX(1);
+.statCardSecondery {
+    background-color: var(--secondary-color);
 }
 
 .statNumber {
-    font-size: 2.5rem;
+    font-size: 64px;
     font-weight: 700;
     color: var(--white-color);
     margin-bottom: var(--spacing-sm);
@@ -63,12 +32,11 @@
 }
 
 .statLabel {
-    color: var(--text-primary);
+    color: var(--white-color);
     font-size: 1rem;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -78,13 +46,13 @@
     }
 
     .statNumber {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 768px) {
     .statsSection {
-        padding: var(--spacing-lg) 0;
+        margin: 40px 0;
     }
 
     .statsGrid {
@@ -97,13 +65,13 @@
     }
 
     .statNumber {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 480px) {
     .statNumber {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .statLabel {
