@@ -5,8 +5,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 150px;
+    margin-bottom: 150px;
     border-radius: 30px;
-    background: linear-gradient(135deg, #2DCF57, #00BCD4);
+    background: linear-gradient(135deg, #242424, #2DCF57);
     height: 430px;
 }
 
@@ -35,6 +36,7 @@
 @media (max-width :992px) {
     .appointmentWrapper {
         margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     .appointmentTitle {
@@ -45,6 +47,7 @@
 @media (max-width: 768px) {
     .appointmentWrapper {
         margin-top: 75px;
+        margin-bottom: 75px;
     }
 
     .appointmentTitle {

@@ -1,7 +1,8 @@
+import type { ReactNode } from "react";
 import styles from "./Button.module.css";
 
 interface ButtonTypes {
-  children: string;
+  children: string | ReactNode;
   className?: string;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;

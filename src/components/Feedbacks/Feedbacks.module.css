@@ -1,0 +1,89 @@
+.feedbackSection {
+    position: relative;
+}
+
+.feedbackContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.swiper {
+    width: 100%;
+    padding: 20px 10px 60px !important;
+    margin: 0;
+}
+
+.navBtn {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    z-index: 10;
+    position: absolute;
+}
+
+.navBtnPrev {
+    left: 16px;
+    top: 300px;
+}
+
+.navBtnNext {
+    right: 16px;
+    top: 300px;
+}
+
+.navBtn svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.navPrev {
+    margin-right: 10px;
+}
+
+.navNext {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 992px) {
+
+    .navBtn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .navBtn svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .feedbackContainer {
+        gap: 10px;
+    }
+
+
+    .swiper {
+        padding: 20px 5px 50px !important;
+    }
+}

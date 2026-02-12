@@ -8,7 +8,7 @@ interface ServiceTypes {
 
 export default function Service({ title, src, alt }: ServiceTypes) {
   return (
-    <div className={styles.service}>
+    <div className={`${styles.service} gradient-border`}>
       <div className={styles.serviceImgWrapper}>
         <img className={styles.serviceImg} src={src} alt={alt} />
       </div>

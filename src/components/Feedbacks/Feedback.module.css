@@ -1,0 +1,126 @@
+.feedback {
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: var(--border-radius-md);
+    max-width: 770px;
+    height: 100%;
+    margin-bottom: 300px;
+}
+
+.feedbackHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.feedbackClientWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.feedbackClientImg {
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.feedbackClientInfos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.feedbackClientName {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.feedbackClientDate {
+    font-size: 18px;
+    color: var(--text-primary);
+    opacity: 0.8;
+}
+
+.feedbackRates {
+    display: flex;
+    gap: 4px;
+}
+
+.feedbackRate {
+    width: 34px;
+    height: 34px;
+    color: var(--yellow-color);
+}
+
+.feedbackText {
+    color: var(--text-primary);
+    line-height: 1.7;
+    margin: 0;
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .feedback {
+        padding: 25px;
+    }
+
+    .feedbackHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feedbackClientImg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feedbackClientName {
+        font-size: 1rem;
+    }
+
+    .feedbackClientDate {
+        font-size: 0.8125rem;
+    }
+
+    .feedbackRate {
+        width: 16px;
+        height: 16px;
+    }
+
+    .feedbackText {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback {
+        padding: 20px;
+    }
+
+    .feedbackClientWrapper {
+        gap: 12px;
+    }
+
+    .feedbackClientImg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .feedbackRate {
+        width: 14px;
+        height: 14px;
+    }
+
+    .feedbackText {
+        font-size: 0.8125rem;
+    }
+}
