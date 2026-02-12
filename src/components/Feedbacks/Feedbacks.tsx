@@ -5,13 +5,13 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import { Autoplay, Navigation } from "swiper/modules";
-import { feedbacksData } from "./FeedbacksData";
 import TopSection from "../common/TopSection/TopSection";
 import Feedback from "./Feedback";
 import styles from "./Feedbacks.module.css";
 import { useRef } from "react";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import Button from "../common/Button/Button";
+import { feedbacksData } from "./FeedbacksData";
 
 export default function Feedbacks() {
   const swiperRef = useRef<SwiperType | null>(null);

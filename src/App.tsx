@@ -5,16 +5,20 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import Stats from "./components/Stats/Stats";
+import WhyUs from "./components/WhyUs/benefitsItem";
 
 export default function App() {
   return (
     <div>
       <Header />
-      <Hero />
-      <Stats />
-      <Services />
-      <Appointment />
-      <Feedbacks />
+      <main>
+        <Hero />
+        <Stats />
+        <Services />
+        <Appointment />
+        <Feedbacks />
+        <WhyUs />
+      </main>
       {/* <Footer /> */}
     </div>
   );

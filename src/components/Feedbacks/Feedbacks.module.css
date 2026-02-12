@@ -10,10 +10,13 @@
     margin-top: 40px;
 }
 
+.navContainer {
+    height: 440px;
+}
+
 .swiper {
     width: 100%;
     padding: 20px 10px 60px !important;
-    margin: 0;
 }
 
 .navBtn {
@@ -85,5 +88,11 @@
 
     .swiper {
         padding: 20px 5px 50px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .navContainer {
+        /* margin-bottom: 40px; */
     }
 }
