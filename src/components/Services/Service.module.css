@@ -1,0 +1,63 @@
+.service {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    padding: 24px 32px;
+    border: 1px solid;
+    border-radius: var(--border-radius-md);
+}
+
+.serviceImgWrapper {
+    margin-left: -18px;
+    width: 126px;
+    height: 126px;
+}
+
+.serviceImg {
+    width: 100%;
+    height: 100%;
+}
+
+.serviceTitle {
+    color: var(--primary-color);
+    margin: 16px 0 7px 0;
+}
+
+/* Responsive Service */
+
+@media (max-width: 992px) {
+    .serviceImgWrapper {
+        max-width: 100px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .serviceImgWrapper {
+        max-width: 85px;
+    }
+}
+
+@media (max-width: 576px) {
+    .serviceImgWrapper {
+        margin: 0 auto;
+    }
+
+    .serviceTitle {
+        margin: 6px auto;
+    }
+
+    .service p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 375px) {
+    .servicserviceImgWrappereImg {
+        max-width: 60px;
+    }
+}
