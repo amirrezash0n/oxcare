@@ -1,0 +1,65 @@
+.appointmentWrapper {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #2DCF57, #00BCD4);
+    height: 430px;
+}
+
+.appointmentTitle {
+    text-align: center;
+    font-size: 48px;
+    max-width: 610px;
+    margin: 14px 0 24px 0;
+    font-weight: bold;
+}
+
+.appointmentButton {
+    font-size: 18px;
+    padding: 8px 20px;
+    background-color: #000000;
+    color: var(--white-color);
+    transition: all ease 200ms;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Resposive Appointment */
+
+@media (max-width :992px) {
+    .appointmentWrapper {
+        margin-top: 100px;
+    }
+
+    .appointmentTitle {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .appointmentWrapper {
+        margin-top: 75px;
+    }
+
+    .appointmentTitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .appointmentTitle {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .appointmentTitle {
+        font-size: 22px;
+    }
+}
