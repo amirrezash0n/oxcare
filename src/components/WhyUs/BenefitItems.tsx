@@ -18,7 +18,12 @@ export default function WhyUs() {
 
         <div className={styles.benefitItems}>
           {benefitsItem.map((item) => (
-            <BenefitItem title={item.title} text={item.text} key={item.id} />
+            <BenefitItem
+              title={item.title}
+              aos={item.aos}
+              text={item.text}
+              key={item.id}
+            />
           ))}
         </div>
       </div>

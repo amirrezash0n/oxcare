@@ -11,7 +11,7 @@ import styles from "./Feedbacks.module.css";
 import { useRef } from "react";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import Button from "../common/Button/Button";
-import { feedbacksData } from "./FeedbacksData";
+import { feedbacksData } from "./feedbacksData";
 
 export default function Feedbacks() {
   const swiperRef = useRef<SwiperType | null>(null);

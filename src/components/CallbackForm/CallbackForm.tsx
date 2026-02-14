@@ -4,7 +4,11 @@ import styles from "./CallbackForm.module.css";
 export default function CallbackForm() {
   return (
     <section className="container">
-      <div className={styles.callbackWrapper}>
+      <div
+        className={styles.callbackWrapper}
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div className={styles.callbackLeft}>
           <span className={styles.callbackQuestion}>
             Need a doctor’s counsealing?

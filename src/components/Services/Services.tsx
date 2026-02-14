@@ -11,6 +11,7 @@ export default function Services() {
         {servicesCard.map((service, index) => (
           <Service
             key={index}
+            aos={service.aos}
             title={service.title}
             src={service.src}
             alt={service.alt}

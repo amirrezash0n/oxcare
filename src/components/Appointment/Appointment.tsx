@@ -4,7 +4,7 @@ import Button from "../common/Button/Button";
 export default function Appointment() {
   return (
     <section className="container">
-      <div className={styles.appointmentWrapper}>
+      <div data-aos="zoom-in" className={styles.appointmentWrapper}>
         <span className={styles.appointmentQuestion}>
           Need a doctor’s counsealing?
         </span>
