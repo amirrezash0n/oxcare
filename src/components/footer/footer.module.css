@@ -1,0 +1,391 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: var(--terciary-color);
+    color: var(--secondary-color);
+    padding: 80px 0 40px;
+}
+
+.footerContainer {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.footerMain {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+/* ===== ستون اول ===== */
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLogo {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.footerDescription {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.footerIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.footerIcon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footerIcon:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* ===== ستون‌های لینک ===== */
+.footerTitle {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footerList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerListItem {
+    margin-bottom: 12px;
+}
+
+.footerLink {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footerLink:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+/* ===== آدرس ===== */
+.footerAddress {
+    font-style: normal;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* ===== ریسپانسیو ===== */
+
+/* لپ‌تاپ 1200px */
+@media (max-width: 1200px) {
+    .footerMain {
+        gap: 30px;
+    }
+
+    .footerLogo {
+        font-size: 1.875rem;
+    }
+}
+
+/* تبلت بزرگ 1024px */
+@media (max-width: 1024px) {
+    .footerMain {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 25px;
+    }
+
+    .footerTitle {
+        font-size: 1.125rem;
+    }
+
+    .footerLink,
+    .footerAddress,
+    .footerDescription {
+        font-size: 0.875rem;
+    }
+}
+
+/* تبلت 992px - 2 ستون متوازن */
+@media (max-width: 992px) {
+    .footerMain {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+
+    .footerColumn:first-child {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footerIcons {
+        justify-content: center;
+    }
+
+    .footerTitle::after {
+        left: 0;
+    }
+
+    .footerColumn:nth-child(2),
+    .footerColumn:nth-child(3),
+    .footerColumn:nth-child(4) {
+        text-align: left;
+    }
+}
+
+/* تبلت 850px */
+@media (max-width: 850px) {
+    .footerMain {
+        gap: 35px 25px;
+    }
+}
+
+/* تبلت کوچک 768px */
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 0 30px;
+        margin-top: 80px;
+    }
+
+    .footerMain {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+
+    .footerColumn:first-child {
+        margin-bottom: 20px;
+    }
+
+    .footerColumn:last-child {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footerAddress {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .footerLogo {
+        font-size: 1.75rem;
+    }
+
+    .footerIcon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+}
+
+/* موبایل بزرگ 650px */
+@media (max-width: 650px) {
+    .footerMain {
+        gap: 30px 15px;
+    }
+
+    .footerTitle {
+        font-size: 1.125rem;
+        margin-bottom: 20px;
+    }
+
+    .footerLink {
+        font-size: 0.875rem;
+    }
+}
+
+/* موبایل 576px - 1 ستون */
+@media (max-width: 576px) {
+    .footer {
+        padding: 50px 0 25px;
+        margin-top: 60px;
+    }
+
+    .footerMain {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footerColumn {
+        text-align: center;
+    }
+
+    .footerColumn:last-child {
+        margin-top: 0;
+    }
+
+    .footerTitle::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footerLink:hover {
+        transform: translateX(0) scale(1.05);
+    }
+
+    .footerLogo {
+        font-size: 1.5rem;
+    }
+
+    .footerDescription {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footerAddress {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+/* موبایل متوسط 480px */
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footerMain {
+        gap: 35px;
+    }
+
+    .footerLogo {
+        font-size: 1.35rem;
+    }
+
+    .footerDescription {
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+
+    .footerTitle {
+        font-size: 1rem;
+        margin-bottom: 18px;
+    }
+
+    .footerListItem {
+        margin-bottom: 10px;
+    }
+
+    .footerLink,
+    .footerAddress {
+        font-size: 0.875rem;
+    }
+
+    .footerIcon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+}
+
+/* موبایل کوچک 375px */
+@media (max-width: 375px) {
+    .footer {
+        padding: 30px 0 15px;
+        margin-top: 50px;
+    }
+
+    .footerMain {
+        gap: 30px;
+    }
+
+    .footerLogo {
+        font-size: 1.25rem;
+        margin-bottom: 15px;
+    }
+
+    .footerDescription {
+        font-size: 0.8125rem;
+        margin-bottom: 20px;
+    }
+
+    .footerTitle {
+        font-size: 0.9375rem;
+        margin-bottom: 15px;
+    }
+
+    .footerLink,
+    .footerAddress {
+        font-size: 0.8125rem;
+    }
+
+    .footerListItem {
+        margin-bottom: 8px;
+    }
+
+    .footerIcon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9375rem;
+    }
+
+    .footerIcons {
+        gap: 12px;
+    }
+}
+
+/* موبایل خیلی کوچک 320px */
+@media (max-width: 320px) {
+    .footer {
+        padding: 25px 0 12px;
+    }
+
+    .footerMain {
+        gap: 25px;
+    }
+
+    .footerLogo {
+        font-size: 1.125rem;
+    }
+
+    .footerDescription {
+        font-size: 0.75rem;
+    }
+
+    .footerTitle {
+        font-size: 0.875rem;
+    }
+
+    .footerLink,
+    .footerAddress {
+        font-size: 0.75rem;
+    }
+
+    .footerIcon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.875rem;
+    }
+
+    .footerIcons {
+        gap: 10px;
+    }
+}

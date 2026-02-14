@@ -11,7 +11,7 @@
 
 ## 📋 Overview
 
-OXCARE is a professional landing page designed for mental health services. It features a clean, calming design with smooth animations and a fully responsive layout that works seamlessly across all devices.
+OXCARE is a professional landing page designed for mental health services. It features a clean, claming design with smooth animations and a fully responsive layout that works seamlessly across all devices.
 
 ### ✨ Key Features
 
