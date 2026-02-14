@@ -1,0 +1,351 @@
+.callbackWrapper {
+    background-color: var(--black-color);
+    border-radius: var(--border-radius-xl);
+    color: var(--white-color);
+    width: 100%;
+    padding: 90px;
+    height: 504px;
+    margin: 150px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.callbackLeft {
+    flex: 1;
+}
+
+.callbackQuestion {
+    font-size: 14px;
+}
+
+.callbackTitle {
+    font-size: 48px;
+    max-width: 460px;
+}
+
+.callbackText {
+    margin-top: 14px;
+    margin-bottom: 50px;
+    max-width: 450px;
+}
+
+.callbackUsers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.callbackImgs {
+    display: flex;
+}
+
+.callbackImgs:first-child {
+    margin-left: 24px;
+}
+
+.callbackImg {
+    width: 48px;
+    height: 48px;
+    margin-left: -24px;
+}
+
+.callbacknoteMessage {
+    max-width: 182px;
+    font-size: 14px;
+}
+
+.callbackRight {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+}
+
+.callbackRight input {
+    display: block;
+    padding: 20px 0 20px 20px;
+    font-size: 14px;
+    border-radius: var(--border-radius-sm);
+    outline: none;
+    border: none;
+}
+
+.callbackRight button {
+    width: 180px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.callbackRight button:hover {
+    background-color: #25b54a;
+    border-color: #25b54a;
+    transform: translateY(-2px);
+}
+
+.callbackButoon {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+@media (max-width: 1024px) {
+    .callbackWrapper {
+        padding: 60px 50px;
+        height: auto;
+        min-height: 450px;
+    }
+
+    .callbackTitle {
+        font-size: 42px;
+        max-width: 400px;
+    }
+
+    .callbackText {
+        max-width: 400px;
+        margin-bottom: 40px;
+    }
+
+    .callbackRight {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .callbackWrapper {
+        padding: 50px 40px;
+        gap: 30px;
+    }
+
+    .callbackTitle {
+        font-size: 38px;
+        max-width: 350px;
+    }
+
+    .callbackText {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+
+    .callbackRight {
+        gap: 25px;
+    }
+
+    .callbackRight input {
+        padding: 18px 0 18px 18px;
+    }
+}
+
+@media (max-width: 850px) {
+    .callbackWrapper {
+        flex-direction: column;
+        padding: 50px 40px;
+        gap: 40px;
+    }
+
+    .callbackLeft {
+        width: 100%;
+        text-align: center;
+    }
+
+    .callbackTitle {
+        font-size: 36px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .callbackText {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .callbackUsers {
+        justify-content: center;
+    }
+
+    .callbackRight {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .callbackRight button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .callbackWrapper {
+        padding: 45px 35px;
+        margin: 120px 0;
+    }
+
+    .callbackTitle {
+        font-size: 32px;
+    }
+
+    .callbackUsers {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .callbacknoteMessage {
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .callbackRight input {
+        padding: 16px 0 16px 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    .callbackWrapper {
+        padding: 40px 30px;
+    }
+
+    .callbackTitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .callbackWrapper {
+        padding: 35px 25px;
+        margin: 100px 0;
+    }
+
+    .callbackTitle {
+        font-size: 28px;
+    }
+
+    .callbackText {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .callbackRight {
+        gap: 20px;
+    }
+
+    .callbackRight input {
+        padding: 14px 0 14px 14px;
+        font-size: 13px;
+    }
+
+    .callbackRight button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .callbackImgs:first-child {
+        margin-left: 20px;
+    }
+
+    .callbackImg {
+        width: 42px;
+        height: 42px;
+        margin-left: -20px;
+    }
+
+    .callbacknoteMessage {
+        font-size: 13px;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .callbackWrapper {
+        padding: 30px 20px;
+        margin: 80px 0;
+        border-radius: var(--border-radius-lg);
+    }
+
+    .callbackTitle {
+        font-size: 22px;
+    }
+
+    .callbackQuestion {
+        font-size: 12px;
+    }
+
+    .callbackText {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .callbackRight {
+        gap: 15px;
+    }
+
+    .callbackRight input {
+        padding: 12px 0 12px 12px;
+        font-size: 12px;
+    }
+
+    .callbackRight button {
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .callbackImgs:first-child {
+        margin-left: 16px;
+    }
+
+    .callbackImg {
+        width: 38px;
+        height: 38px;
+        margin-left: -16px;
+    }
+
+    .callbacknoteMessage {
+        font-size: 12px;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 375px) {
+    .callbackWrapper {
+        padding: 25px 15px;
+        margin: 60px 0;
+    }
+
+    .callbackTitle {
+        font-size: 20px;
+    }
+
+    .callbackText {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+    .callbackRight {
+        gap: 12px;
+    }
+
+    .callbackRight input {
+        padding: 10px 0 10px 10px;
+        font-size: 11px;
+    }
+
+    .callbackRight button {
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .callbackImgs:first-child {
+        margin-left: 12px;
+    }
+
+    .callbackImg {
+        width: 32px;
+        height: 32px;
+        margin-left: -12px;
+    }
+
+    .callbacknoteMessage {
+        font-size: 11px;
+        max-width: 150px;
+    }
+}

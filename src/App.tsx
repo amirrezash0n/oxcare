@@ -1,5 +1,6 @@
 // import Footer from "./components/Footer/Footer";
 import Appointment from "./components/Appointment/Appointment";
+import CallbackForm from "./components/CallbackForm/CallbackForm";
 import Feedbacks from "./components/Feedbacks/Feedbacks";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -18,6 +19,7 @@ export default function App() {
         <Appointment />
         <Feedbacks />
         <WhyUs />
+        <CallbackForm />
       </main>
       {/* <Footer /> */}
     </div>
