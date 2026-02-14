@@ -4,7 +4,7 @@
 }
 
 .imgWrapper {
-    max-width: 500px;
+    width: 50%;
     height: 485px;
 }
 
@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    width: 50%;
 }
 
 .benefitItem {
@@ -78,6 +79,10 @@
         left: -10px;
     }
 
+    .benefitItems {
+        width: 75%;
+    }
+
 }
 
 @media (max-width : 768px) {
@@ -96,5 +101,9 @@
     .imgWrapper {
         width: 350px;
         height: 300px;
+    }
+
+    .benefitItems {
+        width: 100%;
     }
 }
