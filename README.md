@@ -217,7 +217,7 @@ This project is part of ByteRivals competition and is licensed under the MIT Lic
 ## 📞 Contact
 
 - **Project Link**: [https://github.com/amirrezash0n/oxcare](https://github.com/amirrezash0n/oxcare)
-- **Live Demo**: [Coming Soon]
+- **Live Demo**: [https://amirrezash0n.github.io/oxcare/](https://amirrezash0n.github.io/oxcare/)
 
 ---
 
