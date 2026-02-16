@@ -1,4 +1,4 @@
-import Header from "./components/Header/Header";
+import Header from "./components/header/Header";
 import Hero from "./components/Hero/Hero";
 import Stats from "./components/Stats/Stats";
 import Services from "./components/Services/Services";
@@ -6,7 +6,7 @@ import Appointment from "./components/Appointment/Appointment";
 import Feedbacks from "./components/Feedbacks/Feedbacks";
 import WhyUs from "./components/WhyUs/BenefitItems";
 import CallbackForm from "./components/CallbackForm/CallbackForm";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
