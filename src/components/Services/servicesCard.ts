@@ -1,4 +1,4 @@
-export const servicesCard = [
+export const ServicesCard = [
   {
     title: "Counseling",
     src: "images/services/doctor.png",
