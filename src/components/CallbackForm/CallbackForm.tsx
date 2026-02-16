@@ -24,17 +24,17 @@ export default function CallbackForm() {
             <div className={styles.callbackImgs}>
               <img
                 className={styles.callbackImg}
-                src="/images/clients/client1.png"
+                src="images/clients/client1.png"
                 alt="#"
               />
               <img
                 className={styles.callbackImg}
-                src="/images/clients/client2.png"
+                src="images/clients/client2.png"
                 alt="#"
               />
               <img
                 className={styles.callbackImg}
-                src="/images/clients/client3.png"
+                src="images/clients/client3.png"
                 alt="#"
               />
             </div>

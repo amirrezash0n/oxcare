@@ -11,7 +11,7 @@ export default function WhyUs() {
         <div className={styles.imgWrapper}>
           <img
             className={styles.benefitImg}
-            src="/images/whyUs.png"
+            src="images/whyUs.png"
             alt="whyUs"
           />
         </div>
