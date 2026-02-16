@@ -1,0 +1,25 @@
+# ساخت فایل .gitignore با محتوای درست
+@"
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Vite cache
+.vite/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+"@ | Out-File -FilePath .gitignore -Encoding utf8
